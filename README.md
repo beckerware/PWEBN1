@@ -1,29 +1,62 @@
-📦 PWEBN1 – Projeto de Desenvolvimento Web em Java
-Este repositório contém o projeto PWEBN1, desenvolvido como parte das atividades da disciplina de Programação Web. O objetivo é aplicar conceitos fundamentais de desenvolvimento web utilizando a linguagem Java e o gerenciador de dependências Maven.
+# PWEBN1
 
-🛠️ Tecnologias e Ferramentas Utilizadas
-Java: Linguagem de programação principal do projeto.
+Este repositório contém o projeto da disciplina **Programação Web N1**, desenvolvido como parte do curso de Sistemas de Informação. O objetivo é aplicar conceitos de desenvolvimento web utilizando Java e o framework Spring Boot.
 
-Maven: Gerenciador de dependências e automação de build.
+## Tecnologias Utilizadas
 
-Spring Boot (presumido): Framework para simplificar o desenvolvimento de aplicações web em Java.
+- **Java 17+**
+- **Spring Boot**
+- **Maven**
+- **Thymeleaf**
+- **Spring MVC**
+- **Spring Data JPA**
+- **H2 Database** (para testes locais)
 
-HTML/CSS/JavaScript (presumido): Tecnologias para o desenvolvimento do front-end.
+## Estrutura do Projeto
 
-📁 Estrutura do Projeto
-src/: Contém o código-fonte da aplicação.
+O projeto segue a estrutura padrão de aplicações Spring Boot:
 
-pom.xml: Arquivo de configuração do Maven.
+```
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── beckerware/
+│   │   │           └── pwebn1/
+│   │   │               ├── controllers/
+│   │   │               ├── models/
+│   │   │               ├── repositories/
+│   │   │               └── services/
+│   │   └── resources/
+│   │       ├── templates/
+│   │       └── application.properties
+│   └── test/
+├── pom.xml
+├── mvnw / mvnw.cmd
+└── HELP.md
+```
 
-mvnw e mvnw.cmd: Scripts para execução do Maven Wrapper.
+## Como Executar
 
-.gitignore: Arquivo que especifica quais arquivos ou pastas devem ser ignorados pelo Git.
+1. **Clone o repositório:**
 
-LICENSE: Licença MIT, permitindo ampla utilização e modificação do código.
+   ```bash
+   git clone https://github.com/beckerware/PWEBN1.git
+   cd PWEBN1
+   ```
 
-📌 Objetivos do Projeto
-Praticar o desenvolvimento de aplicações web utilizando Java.
+2. **Execute a aplicação:**
 
-Compreender a estrutura de projetos Maven.
+   ```bash
+   ./mvnw spring-boot:run
+   ```
 
-Implementar funcionalidades básicas de uma aplicação web, como rotas, controllers e integração com o front-end.
+3. **Acesse no navegador:**
+
+   ```
+   http://localhost:8080
+   ```
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
